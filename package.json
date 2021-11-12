@@ -1,8 +1,8 @@
 {
-  "name": "vuetify-google-autocomplete",
+  "name": "vuetify-google-autocomplete-bounds",
   "version": "2.0.4",
   "description": "A Vuetify ready Vue.jS component to Google Places Autocomplete",
-  "author": "Madi Shika <mmjshika@gmail.com>",
+  "author": "Dustin Stewart <dustin@edgemarketingdesign.com>",
   "keywords": [
     "vue",
     "vuetify",
@@ -14,10 +14,10 @@
     "lib"
   ],
   "license": "MIT",
-  "homepage": "git@github.com:MadimetjaShika/vuetify-google-autocomplete",
+  "homepage": "git@github.com:Edge-Marketing-and-Design/vuetify-google-autocomplete",
   "repository": {
     "type": "git",
-    "url": "https://github.com/MadimetjaShika/vuetify-google-autocomplete.git"
+    "url": "https://github.com/Edge-Marketing-and-Design/vuetify-google-autocomplete.git"
   },
   "scripts": {
     "deploy": "node publish-pages.js",

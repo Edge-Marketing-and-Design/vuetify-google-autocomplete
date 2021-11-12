@@ -1,6 +1,6 @@
 # Vuetify Google Autocomplete
 
-A Vuetify ready Vue.js (2.x) autosuggest component for the Google Maps Places API.
+A Vuetify ready Vue.js (2.x) autosuggest component for the Google Maps Places API. This is a fork of https://github.com/MadimetjaShika/vuetify-google-autocomplete that includes the ability to set a place search boundary.
 
 [![Build Status](https://travis-ci.org/MadimetjaShika/vuetify-google-autocomplete.svg?branch=dev)](https://travis-ci.org/MadimetjaShika/vuetify-google-autocomplete)
 
