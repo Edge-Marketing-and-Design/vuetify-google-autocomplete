@@ -108,6 +108,21 @@ export default {
       type: String,
       default: 'off',
     },
+
+    /**
+     * Restrict the autocomplete search to a particular set of coordinates
+     *
+     *
+     * @alias module:vuetify-google-autocomplete.props.bounds
+     * @see {@link https://developers.google.com/maps/documentation/javascript/places#find_place_from_query}
+     * @type {String}
+     */
+    bounds: {
+      type: Object,
+      default: null,
+    },
+
+
     /**
      * Maps to Vuetify 'clear-icon' prop.
      *
@@ -607,6 +622,18 @@ export default {
       type: String,
       default: 'false',
     },
+     /**
+     * Restrict the autocomplete search to a particular country or set of countries.
+     * @default 'false'
+     *
+     * @alias module:vuetify-google-autocomplete.props.strintBounds
+     * @see {@link https://developers.google.com/maps/documentation/javascript/places#find_place_from_query}
+     * @type {String}
+     */
+    strictBounds: {
+      type: Boolean,
+      default: false,
+    },
     /**
      * Maps to Vuetify 'suffix' prop.
      *
@@ -941,6 +968,15 @@ export default {
         options.componentRestrictions = {
           country: this.country,
         };
+      }
+      if (this.strictBounds && this.bounds) {
+        options.strictBounds = this.strictBounds
+        options.bounds = {
+                        north: this.bounds.north,
+                        south: this.bounds.south,
+                        east: this.bounds.east,
+                        west: this.bounds.west
+                    }
       }
 
       if (this.fields) {
